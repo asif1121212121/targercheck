@@ -14,3 +14,4 @@ jobs:
         - run: echo added 
         - run: echo "${{ secrets.olive }}"
         - run: echo good bro
+        - run: echo people party
