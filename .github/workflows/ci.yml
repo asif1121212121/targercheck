@@ -1,0 +1,15 @@
+name: workflow1
+on:
+    pull_request_target: 
+      branches: 
+      - 'main'
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+        - name: checkout
+          uses: actions/checkout@v4
+        - name: printing
+          run: ls -larth
+        - run: echo added
+        - run: echo "${{ secrets.olive }}"
